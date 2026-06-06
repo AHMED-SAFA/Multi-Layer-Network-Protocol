@@ -1,0 +1,36 @@
+version 3
+run General-0-20251025-01:23:23-5020
+attr configname General
+attr datetime 20251025-01:23:23
+attr datetimef 20251025-012323
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network multilayernetwork.Network
+attr processid 5020
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network multilayernetwork.Network
+config sim-time-limit 10s
+config **.pc.ipAddr "\"192.168.0.1\""
+config **.dnsServer.ipAddr "\"192.168.0.10\""
+config **.httpServer.ipAddr "\"192.168.0.20\""
+
+par Network.pc typename "\"multilayernetwork.PC\""
+par Network.pc ipAddr "\"192.168.0.1\""
+par Network.pc macAddr "\"AA:BB:CC:DD:EE:01\""
+par Network.dnsServer typename "\"multilayernetwork.DNSServer\""
+par Network.dnsServer ipAddr "\"192.168.0.10\""
+par Network.dnsServer macAddr "\"AA:BB:CC:DD:EE:10\""
+par Network.httpServer typename "\"multilayernetwork.HTTPServer\""
+par Network.httpServer ipAddr "\"192.168.0.20\""
+par Network.httpServer macAddr "\"AA:BB:CC:DD:EE:20\""
+par Network.router typename "\"multilayernetwork.Router\""
+par Network typename "\"multilayernetwork.Network\""
+
